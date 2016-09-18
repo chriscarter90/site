@@ -10,9 +10,3 @@ development:
 test:
   <<: *default
   database: site_test
-
-production:
-  <<: *default
-  database: site_production
-  username: site
-  password: <%= ENV['SITE_DATABASE_PASSWORD'] %>
