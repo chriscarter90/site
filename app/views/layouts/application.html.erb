@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Site</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Site</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="bkgrnd"></div>
+    <div class="bkgrnd-mask">
+      <header class="page-header">
+        <div class="container_12">
+          <div class="page-header__left-panel">
+            <h1>
+              <%= link_to "Chris Carter", root_path %>
+            </h1>
+          </div>
 
-<%= yield %>
+          <div class="page-header__right-panel">
+            <ul class="page-header__links">
+              <li class="page-header__link">
+                <a href="">CV</a>
+              </li>
+              <li class="page-header__link">
+                <a href="">Portfolio</a>
+              </li>
+              <li class="page-header__link--with-border">
+                <a href="">Github</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
 
-</body>
+      <div class="content container_12">
+        <div class="grid_12">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
