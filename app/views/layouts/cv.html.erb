@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CV - Chris Carter</title>
+    <%= stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css", media: "all" %>
+    <%= stylesheet_link_tag "cv", media: "all" %>
+    <%= csrf_meta_tags %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="main container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

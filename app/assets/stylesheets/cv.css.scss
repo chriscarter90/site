@@ -1,0 +1,200 @@
+@import "normalize";
+
+body {
+  background-color: #242f40;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.666rem;
+}
+
+h6 {
+  font-size: 1.333rem;
+}
+
+hr {
+  border-width: 1px;
+  margin: 20px 0;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #037171;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul ul {
+  list-style-position: inside;
+  list-style-type: circle;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+ul.centered-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: #f6f6f6;
+  padding: 0 20px 20px;
+}
+
+header {
+  margin: 20px 0;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    text-align: center;
+  }
+}
+
+dl.list-three-columns {
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  list-style-position: inside;
+
+  @media (max-device-width: 768px) {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+ul.list-two-columns {
+  list-style-type: disc;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  list-style-position: inside;
+
+  @media (max-device-width: 768px) {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+}
+
+ul.list-three-columns {
+  list-style-type: disc;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  list-style-position: inside;
+
+  @media (max-device-width: 768px) {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+  }
+}
+
+.profile-img,
+.name {
+  float: left;
+}
+
+.name {
+  margin-left: 20px;
+}
+
+.profile-img img {
+  clip-path: circle(50px at center);
+  height: 100px;
+  width: 100px;
+}
+
+.experience {
+  margin-bottom: 20px;
+
+  .experience-header {
+    .experience-name {
+      float: left;
+    }
+
+    .experience-period {
+      float: right;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+.education {
+  margin-bottom: 20px;
+
+  .education-header {
+    .education-school-name {
+      float: left;
+    }
+
+    .education-school-period {
+      float: right;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
