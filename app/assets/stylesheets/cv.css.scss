@@ -56,8 +56,9 @@ ul {
 }
 
 ul ul {
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: circle;
+  margin-left: 20px;
 
   li {
     margin-bottom: 0;
@@ -67,6 +68,8 @@ ul ul {
 ul.centered-list {
   max-width: 600px;
   margin: 0 auto;
+  list-style-position: outside;
+  list-style-type: circle;
 }
 
 .main {
@@ -99,7 +102,6 @@ dl.list-three-columns {
   -webkit-columns: 3;
   -moz-columns: 3;
   columns: 3;
-  list-style-position: inside;
 
   @media (max-device-width: 768px) {
     -webkit-columns: 1;
